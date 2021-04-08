@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Export an object containing methods we'll use for accessing the Dog.Ceo API
 
-export default {
+let apiFunc = {
   getRandomDog: function() {
     return axios.get("https://dog.ceo/api/breeds/image/random");
   },
@@ -13,3 +13,5 @@ export default {
     return axios.get("https://dog.ceo/api/breeds/list");
   }
 };
+
+export default apiFunc

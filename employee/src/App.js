@@ -14,7 +14,7 @@ function App() {
       <div>
         <Navbar />
         <Wrapper>
-        <Route exact path="/search" component={Search} />
+        <Route exact path="/" component={Search} />
         </Wrapper>
         <Footer />
       </div>

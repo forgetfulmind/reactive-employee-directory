@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
+import pageTable from "../components/Table"
 
 class Search extends Component {
   state = {
@@ -52,6 +53,7 @@ class Search extends Component {
             breeds={this.state.breeds}
           />
           <SearchResults results={this.state.results} />
+          <pageTable/>
         </Container>
       </div>
     );
