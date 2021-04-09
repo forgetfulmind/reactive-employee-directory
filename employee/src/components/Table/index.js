@@ -4,10 +4,10 @@ import "./style.css";
 
 function Table(props) {
   return (
+    <table>
     <tbody className='tableBody'>
-     
       <tr>
-        <th>Image</th>
+        <th ></th>
         <th>Name</th>
         <th>Phone</th>
         <th>Email</th>
@@ -15,6 +15,7 @@ function Table(props) {
       </tr>
       <Card data={props.data}/>
     </tbody>
+    </table>
   );
 }
 

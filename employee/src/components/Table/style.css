@@ -2,7 +2,18 @@ ul.search-results img {
   margin: 0 auto;
 }
 
-.tableBody{
+table {
   background-color: grey;
   min-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+th   {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightcoral;
 }

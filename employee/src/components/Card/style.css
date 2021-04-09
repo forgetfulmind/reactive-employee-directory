@@ -1,8 +1,6 @@
-ul.search-results img {
-  margin: 0 auto;
-}
+td   {padding: 10px;}
 
-.tableBody{
-  background-color: grey;
-  min-width: 80%;
+img {
+  width: 60px;
+  height: auto;
 }

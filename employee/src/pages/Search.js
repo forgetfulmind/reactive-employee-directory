@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
@@ -14,11 +14,11 @@ class Search extends Component {
     error: ""
   };
 
-  // When the component mounts, get a list of all available base breeds and update this.state.breeds
+  // When the component mounts, get a list of employees
   componentDidMount() {
     API.getEmployeeList()
-      .then(res => this.setState({employees: res.data}))
-      .then(console.log(this.state.employees))
+      .then(res => this.setState({employees: res.data.results}))
+      // .then(console.log(this.state.employees))
       .catch(err => console.log(err));
   }
 
@@ -56,8 +56,8 @@ class Search extends Component {
             search={this.state.search}
           />
           {/* <SearchResults results={this.state.results} /> */}
-        <Table />
         </Container>
+        <Table data={this.state.employees}/>
       </div>
     );
   }

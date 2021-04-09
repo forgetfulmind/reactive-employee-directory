@@ -1,20 +1,27 @@
-import React from "react";
+// import React from "react";
 import "./style.css";
 
 function Card(props) {
+console.log(props.data)
+// let card = []
+//  card = props.data.map(element =>{
 
-  
-  return (     
-      <tr>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>DOB</th>
+  return (
+    props.data.map(element =>{
+      return (
+      <tr key={element.login.uuid}>
+        <td><img src={element.picture.thumbnail} alt="the face"></img></td>
+        <td>{element.name.first} {element.name.last}</td>
+        <td>{element.phone}</td>
+        <td>{element.email}</td>
+        <td>{element.dob.date}</td>
       </tr>
-  );
+    )
+    }
+  ))
+  }
 
-
-}
+// return card
+// }
 
 export default Card;
