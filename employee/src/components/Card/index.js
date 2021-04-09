@@ -1,11 +1,10 @@
 import React from "react";
-import Card from "../Card";
 import "./style.css";
 
-function Table(props) {
-  return (
-    <tbody className='tableBody'>
-     
+function Card(props) {
+
+  
+  return (     
       <tr>
         <th>Image</th>
         <th>Name</th>
@@ -13,9 +12,9 @@ function Table(props) {
         <th>Email</th>
         <th>DOB</th>
       </tr>
-      <Card data={props.data}/>
-    </tbody>
   );
+
+
 }
 
-export default Table;
+export default Card;
