@@ -8,7 +8,7 @@ function Table(props) {
     <tbody className='tableBody'>
       <tr>
         <th ></th>
-        <th>Name</th>
+        <th>Name <img className="carrot" data-value="name" onClick={props.handleBtnClick} src="/carrot.png" alt="nav carrot"></img></th>
         <th>Phone</th>
         <th>Email</th>
         <th>DOB</th>

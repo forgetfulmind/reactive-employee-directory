@@ -7,7 +7,7 @@ function SearchForm(props) {
     <form className="search">
       <div className="form-group">
         <input
-          value={props.search}
+          // value={props.search}
           onChange={props.handleInputChange}
           name="search"
           list="search"
@@ -16,14 +16,6 @@ function SearchForm(props) {
           placeholder="Search for an employee"
           id="search"
         />
-        {/* <datalist id="breeds"> 
-          {props.breeds.map(breed => (
-            <option value={breed} key={breed} />
-          ))}
-        </datalist> */}
-        <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
-          Search
-        </button>
       </div>
     </form>
   );

@@ -17,3 +17,8 @@ th   {
   padding-bottom: 10px;
   background-color: lightcoral;
 }
+
+.carrot {
+  width: 10px;
+  height: auto;
+}

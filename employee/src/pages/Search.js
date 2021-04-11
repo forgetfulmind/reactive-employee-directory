@@ -18,12 +18,15 @@ class Search extends Component {
   componentDidMount() {
     API.getEmployeeList()
       .then(res => this.setState({employees: res.data.results}))
-      // .then(console.log(this.state.employees))
+      .then(res => this.setState({results: this.state.employees}))
       .catch(err => console.log(err));
   }
 
-  handleInputChange = event => {
-    this.setState({ search: event.target.value });
+  handleInputChange = (event) => {
+    // this.setState({ search: event.target.value });
+    let viewArr = this.state.employees
+    viewArr.filter(employee => employee.name.first === event.target.value);
+    this.setState({results: viewArr})
   };
 
   // handleFormSubmit = event => {
@@ -38,6 +41,31 @@ class Search extends Component {
   //     .catch(err => this.setState({ error: err.message }));
   // };
 
+  sortName(){
+    let viewArr = this.state.employees
+    viewArr.sort((a, b) => {
+      let fa = a.name.first.toLowerCase(),
+          fb = b.name.first.toLowerCase();
+  
+      if (fa < fb) {
+          return -1;
+      }
+      if (fa > fb) {
+          return 1;
+      }
+      return 0;
+  });
+  this.setState({results: viewArr})
+  }
+
+  handleBtnClick = (event) => {
+    const btnName = event.target.getAttribute("data-value");
+    if (btnName === "name") {
+      this.sortName()
+    }
+
+  }
+
   render() {
     return (
       <div>
@@ -50,14 +78,14 @@ class Search extends Component {
             {this.state.error}
           </Alert> */}
           <SearchForm
-            handleFormSubmit={this.handleFormSubmit}
+            // handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
             employees={this.state.employees}
-            search={this.state.search}
+            // search={this.state.search}
           />
           {/* <SearchResults results={this.state.results} /> */}
         </Container>
-        <Table data={this.state.employees}/>
+        <Table data={this.state.results} handleBtnClick={this.handleBtnClick} />
       </div>
     );
   }
