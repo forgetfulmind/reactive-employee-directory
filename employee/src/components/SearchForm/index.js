@@ -13,8 +13,9 @@ function SearchForm(props) {
           list="search"
           type="text"
           className="form-control"
-          placeholder="Search for an employee"
+          placeholder="Search for employee by first name"
           id="search"
+          onSubmit={props.handleFormSubmit}
         />
       </div>
     </form>

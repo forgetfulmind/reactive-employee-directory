@@ -3,8 +3,9 @@ ul.search-results img {
 }
 
 table {
-  background-color: grey;
+  /* background-color: rgb(190, 190, 190); */
   min-width: 80%;
+  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15,7 +16,7 @@ th   {
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: lightcoral;
+  /* background-color: lightcoral; */
 }
 
 .carrot {

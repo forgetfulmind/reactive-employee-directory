@@ -2,8 +2,6 @@ import React, { Component} from "react";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
-// import SearchResults from "../components/SearchResults";
-// import Alert from "../components/Alert";
 import Table from "../components/Table"
 
 class Search extends Component {
@@ -23,23 +21,17 @@ class Search extends Component {
   }
 
   handleInputChange = (event) => {
-    // this.setState({ search: event.target.value });
     let viewArr = this.state.employees
-    viewArr.filter(employee => employee.name.first === event.target.value);
-    this.setState({results: viewArr})
+    let filterArr = viewArr.filter(employee => 
+      employee.name.first.toLowerCase().indexOf(event.target.value.toLowerCase())> -1);
+
+    this.setState({results: filterArr})
   };
 
-  // handleFormSubmit = event => {
-  //   event.preventDefault();
-  //   API.getDogsOfBreed(this.state.search)
-  //     .then(res => {
-  //       if (res.data.status === "error") {
-  //         throw new Error(res.data.message);
-  //       }
-  //       this.setState({ results: res.data.message, error: "" });
-  //     })
-  //     .catch(err => this.setState({ error: err.message }));
-  // };
+  handleFormSubmit = event => {
+    event.preventDefault();
+    console.log("submit")
+  };
 
   sortName(){
     let viewArr = this.state.employees
@@ -58,32 +50,72 @@ class Search extends Component {
   this.setState({results: viewArr})
   }
 
+  sortPhone(){
+    let viewArr = this.state.employees
+    viewArr.sort((a, b) => {
+      return a.phone - b.phone
+  });
+  this.setState({results: viewArr})
+  }
+
+  sortEmail(){
+    let viewArr = this.state.employees
+    viewArr.sort((a, b) => {
+      let fa = a.email.toLowerCase(),
+          fb = b.email.toLowerCase();
+  
+      if (fa < fb) {
+          return -1;
+      }
+      if (fa > fb) {
+          return 1;
+      }
+      return 0;
+  });
+  this.setState({results: viewArr})
+  }
+
+  sortDob(){
+    console.log("sort age")
+    let viewArr = this.state.employees
+    viewArr.sort((a, b) => {
+      return a.dob.age - b.dob.age
+  });
+  this.setState({results: viewArr})
+  }
+
+
   handleBtnClick = (event) => {
     const btnName = event.target.getAttribute("data-value");
-    if (btnName === "name") {
-      this.sortName()
+    // if (btnName === "name") {
+    //   this.sortName()
+    // }
+    switch (btnName) {
+      case "name":
+        this.sortName()
+          break;
+      case "phone":
+        this.sortPhone()
+          break;
+      case "email":
+        this.sortEmail()
+          break;  
+      case "dob":
+        this.sortDob()
+          break;           
+        default:
+        return null
     }
-
   }
 
   render() {
     return (
       <div>
         <Container style={{ minHeight: "80%" }}>
-          <h3 className="text-center">Click on carrots to filter by heading or use the search box to narrow your results</h3>
-          {/* <Alert
-            type="danger"
-            style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
-          >
-            {this.state.error}
-          </Alert> */}
           <SearchForm
-            // handleFormSubmit={this.handleFormSubmit}
+            handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
-            employees={this.state.employees}
-            // search={this.state.search}
           />
-          {/* <SearchResults results={this.state.results} /> */}
         </Container>
         <Table data={this.state.results} handleBtnClick={this.handleBtnClick} />
       </div>

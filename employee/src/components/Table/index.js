@@ -4,17 +4,19 @@ import "./style.css";
 
 function Table(props) {
   return (
-    <table>
-    <tbody className='tableBody'>
-      <tr>
-        <th ></th>
-        <th>Name <img className="carrot" data-value="name" onClick={props.handleBtnClick} src="/carrot.png" alt="nav carrot"></img></th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>DOB</th>
-      </tr>
-      <Card data={props.data}/>
-    </tbody>
+    <table className='table table-striped'>
+      <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name <img className="carrot" data-value="name" onClick={props.handleBtnClick} src="/carrot.png" alt="nav carrot"></img></th>
+            <th>Phone <img className="carrot" data-value="phone" onClick={props.handleBtnClick} src="/carrot.png" alt="nav carrot"></img></th>
+            <th>Email <img className="carrot" data-value="email" onClick={props.handleBtnClick} src="/carrot.png" alt="nav carrot"></img></th>
+            <th>DOB <img className="carrot" data-value="dob" onClick={props.handleBtnClick} src="/carrot.png" alt="nav carrot"></img></th>
+        </tr>
+      </thead>
+      <tbody>
+            <Card data={props.data}/>
+      </tbody>
     </table>
   );
 }

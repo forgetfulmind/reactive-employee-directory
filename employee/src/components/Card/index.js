@@ -10,10 +10,10 @@ console.log(props.data)
     props.data.map(element =>{
       return (
       <tr key={element.login.uuid}>
-        <td><img src={element.picture.thumbnail} alt="the face"></img></td>
+        <th scope="row"><img src={element.picture.thumbnail} alt="the face"></img></th>
         <td>{element.name.first} {element.name.last}</td>
         <td>{element.phone}</td>
-        <td>{element.email}</td>
+        <td><a href={`mailto:${element.email}`}>{element.email}</a></td>
         <td>{element.dob.date.split('T')[0]}</td>
       </tr>
     )

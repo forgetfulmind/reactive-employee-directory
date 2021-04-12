@@ -1,13 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <Link className="navbar-brand" to="/">
-        Employee Directory
-      </Link>
+    <nav className="header">
+      <h1>Employee Directory</h1>
+      <p>Click on carrots to filter by heading or use the search box to narrow your results</p>
     </nav>
   );
 }
