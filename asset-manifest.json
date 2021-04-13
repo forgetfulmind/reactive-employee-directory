@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reactive-employee-directory/static/css/main.340fa51e.chunk.css",
-    "main.js": "/reactive-employee-directory/static/js/main.995e1e6b.chunk.js",
-    "main.js.map": "/reactive-employee-directory/static/js/main.995e1e6b.chunk.js.map",
+    "main.js": "/reactive-employee-directory/static/js/main.708a32c1.chunk.js",
+    "main.js.map": "/reactive-employee-directory/static/js/main.708a32c1.chunk.js.map",
     "runtime-main.js": "/reactive-employee-directory/static/js/runtime-main.3b72bde7.js",
     "runtime-main.js.map": "/reactive-employee-directory/static/js/runtime-main.3b72bde7.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/reactive-employee-directory/static/css/2.4c97ca4f.chunk.css",
@@ -13,13 +13,14 @@
     "index.html": "/reactive-employee-directory/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/reactive-employee-directory/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.340fa51e.chunk.css.map": "/reactive-employee-directory/static/css/main.340fa51e.chunk.css.map",
-    "static/js/2.d7b48f88.chunk.js.LICENSE.txt": "/reactive-employee-directory/static/js/2.d7b48f88.chunk.js.LICENSE.txt"
+    "static/js/2.d7b48f88.chunk.js.LICENSE.txt": "/reactive-employee-directory/static/js/2.d7b48f88.chunk.js.LICENSE.txt",
+    "static/media/carrot.21ddfaca.png": "/reactive-employee-directory/static/media/carrot.21ddfaca.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3b72bde7.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.d7b48f88.chunk.js",
     "static/css/main.340fa51e.chunk.css",
-    "static/js/main.995e1e6b.chunk.js"
+    "static/js/main.708a32c1.chunk.js"
   ]
 }
