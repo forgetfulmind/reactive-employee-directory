@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
 import Table from "../components/Table"
 
+
 class Search extends Component {
   state = {
     search: "",

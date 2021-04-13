@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+  # Reactive Employee Directory
 
-## Available Scripts
+  <h2>Description:</h2> A react application for sorting a database of "employees" into a table with a search field and the ability to search by columns. Currently it is using an API call for a set of test employees which refreshes upon each reload. 
 
-In the project directory, you can run:
+  <h2>Table of Contents:</h2> 
 
-### `npm start`
+  [Installation](#install)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  [Usage](#usage)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  [License](#license)
 
-### `npm test`
+  [Contributing](#contributing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  [Tests](#tests)
 
-### `npm run build`
+  [Questions](#questions)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <h3><a name="install">Installation:</a></h3>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  this is a react application, please follow standard react protocols 
 
-### `npm run eject`
+  <h3><a name="usage">Usage:</a></h3>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  Deployed application can be found at this link on github pages (https://forgetfulmind.github.io/reactive-employee-directory)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <h3><a name="liscense">License:</a></h3>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  This work is covered under the CC0 1.0 Universal license.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  Full license information can be found here: [License: CC0-1.0](http://creativecommons.org/publicdomain/zero/1.0/)
 
-## Learn More
+  <h3><a name="contributing">Contributing:</a></h3> 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  I welcome contributions! open up a pull request! 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  <a name="tests"><h3>Tests:</h3></a> 
 
-### Code Splitting
+  no test procedures are implemented at this time 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  <a name="questions"><h3>Questions:</h3></a>  
 
-### Analyzing the Bundle Size
+  gitHub Name: forgetfulmind
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  gitHub Link: <a href="https://github.com/forgetfulmind">https://github.com/forgetfulmind</a>
 
-### Making a Progressive Web App
+  eMail: forgetfulmind@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
