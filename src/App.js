@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Search from "./pages/Search";
 import Wrapper from "./components/Wrapper";
