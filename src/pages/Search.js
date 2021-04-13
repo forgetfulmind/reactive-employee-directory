@@ -30,7 +30,6 @@ class Search extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-    console.log("submit")
   };
 
   sortName(){
